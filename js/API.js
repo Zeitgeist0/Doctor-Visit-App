@@ -7,7 +7,7 @@ const authorization = async (email, password) => {
     body: JSON.stringify({ email: email, password: password }),
   });
   if (response.status !== 200) {
-    alert("Something went wrong, please try again");
+    alert("The email is <trial1010@gmail.com> and the password is <1010>");
   } else {
     const token = await response.text();
     localStorage.setItem("token", token);
